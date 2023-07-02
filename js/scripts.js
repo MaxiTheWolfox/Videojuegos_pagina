@@ -20,12 +20,12 @@ formulario.addEventListener('submit', function(e) {
     const { nombre, email, mensaje } = datos;
 
     if(nombre === '' || email === '' || mensaje === '' ) {
-        console.log('Al menos un campo esta vacio');
+        // console.log('Al menos un campo esta vacio');
         mostrarError('Todos los campos son obligatorios');
         return; // Detiene la ejecución de esta función
     }
 
-    console.log('Todo bien...')
+    // console.log('Todo bien...')
 
     mostrarMensaje('Mensaje enviado correctamente', nombre);
 });
